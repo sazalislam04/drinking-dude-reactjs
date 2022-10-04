@@ -13,7 +13,15 @@ function App() {
       element: <Layout />,
       children: [
         { path: "home", element: <Home /> },
-        { path: "products", element: <Products /> },
+        {
+          path: "products",
+          loader: async () => {
+            return fetch(
+              "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=a"
+            );
+          },
+          element: <Products />,
+        },
         { path: "contact", element: <Contact /> },
         { path: "login", element: <Login /> },
       ],

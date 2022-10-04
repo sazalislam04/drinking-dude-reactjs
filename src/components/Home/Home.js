@@ -2,11 +2,11 @@ import React from "react";
 import img from "../../img/profile.png";
 const Home = () => {
   return (
-    <div className="px-20 bg-slate-200 md:flex gap-4 items-center md:h-[90vh] ">
-      <div className="w-full p-5 lg:p-0 lg:w-1/2 ">
-        <h1 className="text-4xl lg:text-7xl font-semibold text-slate-900 mb-5">
+    <div className="px-12 lg:px-20 bg-slate-200 md:flex lg:gap-4 items-center md:h-[90vh] h-[90vh] ">
+      <div className="w-full pt-5 lg:pt-0 lg:w-1/2 ">
+        <h1 className="text-4xl  md:text-7xl font-semibold text-slate-900 mb-5">
           Welcome to{" "}
-          <span className="text-rose-500 text-2xl lg:text-5xl">
+          <span className="text-rose-500 text-2xl md:text-5xl">
             Drinking Dude
           </span>
         </h1>
@@ -16,7 +16,7 @@ const Home = () => {
           important roles in human culture.{" "}
         </p>
       </div>
-      <div>
+      <div className="mt-10 md:mt-10">
         <img src={img} alt="" />
       </div>
     </div>
