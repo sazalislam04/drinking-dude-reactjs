@@ -1,0 +1,18 @@
+.active {
+  position: relative;
+  transition: all 0.4s;
+  z-index: 1;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background: hwb(350 11% 12%);
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  z-index: -1;
+}
