@@ -7,7 +7,7 @@ const Contact = () => {
   };
   return (
     <div className="px-10 lg:px-20 lg:h-[95vh] h-full p-5 bg-gray-800 lg:flex items-center">
-      <div>
+      <div data-aos="zoom-in-right" data-aos-duration="1000">
         <img className="w-full mb-10 lg:mb-0" src={img} alt="" />
       </div>
       <div>
@@ -15,6 +15,8 @@ const Contact = () => {
           onSubmit={handleOnChange}
           action=""
           className="shadow-md contact rounded-md "
+          data-aos="zoom-in-left"
+          data-aos-duration="1500"
         >
           <div className="mb-4  md:flex block gap-3 text-white">
             <input
