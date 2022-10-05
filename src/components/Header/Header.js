@@ -33,9 +33,9 @@ const Header = () => {
         <li className="mb-3 lg:mb-0">
           <NavLink to="/contact">Contact</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/login">Login</NavLink>
-        </li>
+        </li> */}
       </ul>
       <div onClick={handleOpen} className="lg:hidden">
         {open ? (
