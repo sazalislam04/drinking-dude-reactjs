@@ -15,7 +15,7 @@ const Header = () => {
       <ul
         className={`lg:flex items-center gap-12 text-xl mt-[254px] lg:mt-0 ${
           open
-            ? "right-0 absolute rounded-bl-md w-48 bg-slate-700 text-center p-5 h-48 duration-500 ease-in"
+            ? "right-0 absolute rounded-bl-md w-48 bg-slate-700 text-center p-5 h-48 duration-500 ease-in z-10"
             : "right-[-240px] hidden "
         }`}
       >

@@ -5,6 +5,7 @@ import {
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Product.css";
+
 const Product = ({ product }) => {
   const {
     strDrinkThumb,
@@ -15,7 +16,11 @@ const Product = ({ product }) => {
     strDrink,
   } = product;
   return (
-    <div className="shadow-md card bg-slate-100 relative h-[430px]">
+    <div
+      className="shadow-md card bg-slate-100 relative h-[430px]"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <img
         className="h-56 w-full rounded-tl rounded-tr"
         src={strDrinkThumb}

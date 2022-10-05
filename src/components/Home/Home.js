@@ -2,7 +2,11 @@ import React from "react";
 import img from "../../img/profile.png";
 const Home = () => {
   return (
-    <div className="px-12 lg:px-20 bg-slate-200 md:flex lg:gap-4 items-center md:h-[90vh] h-[90vh] ">
+    <div
+      className="px-12 lg:px-20 bg-slate-200 md:flex lg:gap-4 items-center md:h-[90vh] h-[90vh] "
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+    >
       <div className="w-full pt-5 lg:pt-0 lg:w-1/2 ">
         <h1 className="text-4xl  md:text-7xl font-semibold text-slate-900 mb-5">
           Welcome to{" "}
